@@ -1,0 +1,143 @@
+:root {
+/* ### Primary */
+--VeryDarkMagenta: hsl(300, 43%, 22%);
+--Soft_Pink: hsl(333, 80%, 67%);
+
+/* ### Neutral */
+--Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+--Light_Grayish_Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+--body_font_size: 15px;
+
+--font-family: 'League Spartan', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--body_font_size);
+    background: lightgray;
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    width: 980px;
+    /* width: 1440px; */
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--White);
+}
+
+
+/* Create flex boxes for upper content */
+.flex-upper-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    
+}
+
+.flex-text-upper-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 35%;
+}
+
+.five-star-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid green;
+    width: 400px;
+}
+
+
+/* Format content in upper section */
+.flex-text-upper-left h1 {
+    color: var(--VeryDarkMagenta);
+    font-family: var(--font-family);
+    font-weight: 700;
+    padding: 30px 0px 30px 0px;
+    
+}
+
+.flex-text-upper-left p {
+    color: var(--Dark_Grayish_Magenta);
+    font-family: var(--font-family);
+    /* font-weight: 700; */
+    padding: 0px 0px 30px 0px;
+    line-height: 1.3rem;
+    
+}
+
+.five-star-reviews p {
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    padding: 10px;
+    background-color: var(--Light_Grayish_Magenta);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 350px;
+}
+
+.five-star-reviews  p{
+    background: url('../images/icon-star.svg'); 
+    background-repeat: repeat-x;
+
+}
+
+
+
+
+/* Format buyer cards */
+.buyer-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 10px;  
+}
+
+.boxes {
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+    
+
+}
+
+.buyer-name {
+    color: var(--White);
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.testimonial {
+    color: var(--White);
+    padding: 15px;
+}
+
+.buyer {
+    color: var(--Soft_Pink);
+    padding-left: 15px;
+}
+
+
+
