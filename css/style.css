@@ -85,7 +85,10 @@ body {
     padding: 1rem 1rem;
     margin: 1rem 1rem;
     flex: 1;
-    flex-wrap: wrap;   
+    /* flex-wrap: wrap;    */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .buyer-boxes {
@@ -101,7 +104,9 @@ body {
 
 .box-image-photo img {
     border-radius: 50%;
-    padding-right: 1rem;
+    /* padding-right: 1rem;    */
+    margin-right: 0.5rem;
+    height: 2rem;
 }
 
 .buyer {
@@ -112,8 +117,9 @@ body {
 
 @media (min-width: 768px) {
 
+    
     .main {
-        max-width: 1440px; 
+        max-width: 986px;
         margin: 1rem auto;     
     }
 
@@ -121,21 +127,28 @@ body {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        padding: 2rem 3rem;        
+        padding: 2rem 3.5rem;        
     }
 
     .flex-upper-text-container {
-        width: 40%;    
+        min-width: 250px;    
+        max-width: 35%;
+        flex-shrink: 0;
     }
 
 
     .flex-upper-text-container h1 {        
         text-align: left;
-        margin: 0 1rem;
+        margin: 0 2rem;
+       
+        
     }
     
     .flex-upper-text-container p {
-        text-align: left;        
+        text-align: left;
+        margin: 0 2rem;
+        width: 100%;
+        flex-shrink: 0;
     }
 
     .flex-five-star-reviews-container {        
@@ -163,6 +176,7 @@ body {
         background-color: var(--Light_Grayish_Magenta);
         margin-bottom: 1rem;
         padding: 0 0.5rem;
+        border-radius: 5px;
     }
 
     .star-spacing p {
@@ -197,7 +211,16 @@ body {
         flex-direction: row;
         padding: 0rem 3rem 3rem 3rem;
         align-items: flex-start;
+        justify-content:space-between;
+        margin: 0 1.5rem;
+        height: 100%;
     } 
+
+    .boxes {
+        min-height: 200px;
+        flex-shrink: 0;
+        padding: 0rem 1rem;
+    }
 
     #box-2 {
         margin-top: 2.0rem;
